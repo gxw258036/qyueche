@@ -111,6 +111,12 @@
 			<artifactId>lombok</artifactId>
 			<version>1.14.8</version>
 		</dependency>
+
+		<dependency>
+			<groupId>com.qu</groupId>
+			<artifactId>sms</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 	
 	<build>
@@ -144,6 +150,19 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
+	<repositories>
+		<repository>
+			<id>nexus</id>
+			<name>nexus</name>
+			<url>http://mvn.qyueche.cn:8081/nexus/content/groups/public/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
 
 </project>
